@@ -72,7 +72,6 @@ const showQuarterly = ref(true);
         :show-time="showTime"
         :show-quarterly="showQuarterly"
         time-format="hours"
-        :max="endDate"
       />
     </div>
 
