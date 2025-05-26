@@ -60,7 +60,8 @@ const quarters = computed(() => [
 ]);
 
 const daysInMonth = computed(() => {
-  return new Date(currentYear.value, currentMonth.value + 1, 0).getDate();
+  const month = tempMonth.value !== null ? tempMonth.value : currentMonth.value;
+  return new Date(currentYear.value, month + 1, 0).getDate();
 });
 
 const timeUnits = [

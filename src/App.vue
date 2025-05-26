@@ -36,13 +36,13 @@ const dateToPostToServer = (date: Date | null) => {
 const startDateDisplay = computed(() => dateToPostToServer(startDate.value));
 const endDateDisplay = computed(() => dateToPostToServer(endDate.value));
 
-const showWeekly = ref(false);
+const showWeekly = ref(true);
 const showTime = ref(true);
 const showQuarterly = ref(true);
 </script>
 
 <template>
-  <div
+  <!-- <div
     class="flex gap-4 p-4 bg-gray-50 border-b border-gray-200 m-4 rounded-lg"
   >
     <div class="flex flex-col gap-2">
@@ -61,7 +61,7 @@ const showQuarterly = ref(true);
         Show Time
       </label>
     </div>
-  </div>
+  </div> -->
 
   <div class="flex gap-8 p-4 h-screen align-center justify-center">
     <div class="flex flex-col gap-2">
